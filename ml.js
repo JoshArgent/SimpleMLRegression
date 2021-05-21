@@ -1,4 +1,5 @@
 import regression from 'regression-multivariate-polynomial';
+import { zip, unzip, shuffleArray, sumArray, minIndex } from './arrays.js';
 
 const defaultConfig = {
 	testSplit: 0.2,
