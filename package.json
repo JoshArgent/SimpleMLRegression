@@ -18,8 +18,8 @@
 	"author": "Josh Argent",
 	"license": "MIT",
 	"dependencies": {
-		"csvtojson": "^2.0.10",
-		"regression-multivariate-polynomial": "^1.1.0"
+		"csvtojson": "2.0.10",
+		"regression-multivariate-polynomial": "1.1.0"
 	},
 	"devDependencies": {
 		"jest": "^26.6.3",
