@@ -1,3 +1,5 @@
 # .npmignore
 tests/
 .vscode/
+.github/
+.git/
