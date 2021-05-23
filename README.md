@@ -32,7 +32,7 @@ Train a polynomial model based on this training data:
 ```javascript
 import { loadDataCSV, train, predict } from 'simple-ml-regression';
 
-loadDataCSV('data.csv', ['X1', 'X2', 'X3', 'Y1']).then((data) => {
+loadDataCSV('data.csv', ['X1', 'X2', 'X3'], ['Y1']).then((data) => {
 	const model = train(data, {
 		testSplit: 0.2,
 		maxDegree: 12,
