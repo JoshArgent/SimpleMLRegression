@@ -1,4 +1,4 @@
-import regression from 'regression-multivariate-polynomial';
+import { PolynomialRegressor } from 'regression-multivariate-polynomial';
 import { zip, unzip, shuffleArray, sumArray, minIndex } from './arrays.js';
 
 const defaultConfig = {
@@ -73,7 +73,7 @@ export function train(trainingData, config = defaultConfig) {
 }
 
 export function learn(xs, ys, degree = 5) {
-	const model = new regression.PolynomialRegressor(degree);
+	const model = new PolynomialRegressor(degree);
 	model.fit(xs, ys);
 
 	return model;
@@ -95,7 +95,7 @@ export function predict(model, xs) {
  * @returns a model
  */
 export function loadModel(modelData) {
-	const model = new regression.PolynomialRegressor();
+	const model = new PolynomialRegressor();
 	model.fromConfig(modelData);
 
 	return model;
