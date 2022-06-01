@@ -1,6 +1,6 @@
 {
 	"name": "simple-ml-regression",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"description": "A simple library for training a polynomial regression model from csv training data",
 	"main": "index.js",
 	"type": "module",
