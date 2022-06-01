@@ -15,10 +15,10 @@ export function loadDataCSV(file, xColumns, yColumns) {
 			.on('error', (error) => reject(error))
 			.then((data) => {
 				const xs = data.map((row) =>
-					Object.values(filterKeys(row, xColumns))
+					Object.values(filterKeys(row, xColumns)).map(parseFloat)
 				);
 				const ys = data.map((row) =>
-					Object.values(filterKeys(row, yColumns))
+					Object.values(filterKeys(row, yColumns)).map(parseFloat)
 				);
 
 				resolve(new TrainingData(xs, ys));
